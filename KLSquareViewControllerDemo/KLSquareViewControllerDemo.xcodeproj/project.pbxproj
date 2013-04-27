@@ -16,6 +16,9 @@
 		248ADBE0172C0B7200F84654 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 248ADBDF172C0B7200F84654 /* Default.png */; };
 		248ADBE2172C0B7200F84654 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 248ADBE1172C0B7200F84654 /* Default@2x.png */; };
 		248ADBE4172C0B7200F84654 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 248ADBE3172C0B7200F84654 /* Default-568h@2x.png */; };
+		248ADBF2172C0E7D00F84654 /* KLSquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248ADBF1172C0E7D00F84654 /* KLSquareViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		248ADBF9172C0FB000F84654 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248ADBF7172C0FB000F84654 /* ChildViewController.m */; };
+		248ADBFA172C0FB000F84654 /* ChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248ADBF8172C0FB000F84654 /* ChildViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		248ADBDF172C0B7200F84654 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		248ADBE1172C0B7200F84654 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		248ADBE3172C0B7200F84654 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		248ADBF0172C0E7D00F84654 /* KLSquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSquareViewController.h; sourceTree = "<group>"; };
+		248ADBF1172C0E7D00F84654 /* KLSquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSquareViewController.m; sourceTree = "<group>"; };
+		248ADBF6172C0FB000F84654 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		248ADBF7172C0FB000F84654 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		248ADBF8172C0FB000F84654 /* ChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 		248ADBBE172C0B7200F84654 = {
 			isa = PBXGroup;
 			children = (
+				248ADBEF172C0E4E00F84654 /* KLSquareViewController */,
 				248ADBD3172C0B7200F84654 /* KLSquareViewControllerDemo */,
 				248ADBCC172C0B7200F84654 /* Frameworks */,
 				248ADBCA172C0B7200F84654 /* Products */,
@@ -80,6 +89,9 @@
 			children = (
 				248ADBDC172C0B7200F84654 /* AppDelegate.h */,
 				248ADBDD172C0B7200F84654 /* AppDelegate.m */,
+				248ADBF6172C0FB000F84654 /* ChildViewController.h */,
+				248ADBF7172C0FB000F84654 /* ChildViewController.m */,
+				248ADBF8172C0FB000F84654 /* ChildViewController.xib */,
 				248ADBD4172C0B7200F84654 /* Supporting Files */,
 			);
 			path = KLSquareViewControllerDemo;
@@ -97,6 +109,16 @@
 				248ADBE3172C0B7200F84654 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		248ADBEF172C0E4E00F84654 /* KLSquareViewController */ = {
+			isa = PBXGroup;
+			children = (
+				248ADBF0172C0E7D00F84654 /* KLSquareViewController.h */,
+				248ADBF1172C0E7D00F84654 /* KLSquareViewController.m */,
+			);
+			name = KLSquareViewController;
+			path = ../KLSquareViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +176,7 @@
 				248ADBE0172C0B7200F84654 /* Default.png in Resources */,
 				248ADBE2172C0B7200F84654 /* Default@2x.png in Resources */,
 				248ADBE4172C0B7200F84654 /* Default-568h@2x.png in Resources */,
+				248ADBFA172C0FB000F84654 /* ChildViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +189,8 @@
 			files = (
 				248ADBDA172C0B7200F84654 /* main.m in Sources */,
 				248ADBDE172C0B7200F84654 /* AppDelegate.m in Sources */,
+				248ADBF2172C0E7D00F84654 /* KLSquareViewController.m in Sources */,
+				248ADBF9172C0FB000F84654 /* ChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +264,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KLSquareViewControllerDemo/KLSquareViewControllerDemo-Prefix.pch";
 				INFOPLIST_FILE = "KLSquareViewControllerDemo/KLSquareViewControllerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -250,7 +277,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KLSquareViewControllerDemo/KLSquareViewControllerDemo-Prefix.pch";
 				INFOPLIST_FILE = "KLSquareViewControllerDemo/KLSquareViewControllerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -274,6 +303,7 @@
 				248ADBE9172C0B7200F84654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

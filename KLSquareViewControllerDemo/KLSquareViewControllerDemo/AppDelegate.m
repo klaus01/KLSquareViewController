@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "KLSquareViewController.h"
+#import "ChildViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +17,33 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    ChildViewController *leftTopViewController = [[ChildViewController alloc] init];
+    leftTopViewController.view.backgroundColor = [UIColor redColor];
+    leftTopViewController.label.text = @"1";
+    ChildViewController *rightTopViewController = [[ChildViewController alloc] init];
+    rightTopViewController.view.backgroundColor = [UIColor greenColor];
+    rightTopViewController.label.text = @"2";
+    ChildViewController *leftBottomViewController = [[ChildViewController alloc] init];
+    leftBottomViewController.view.backgroundColor = [UIColor blueColor];
+    leftBottomViewController.label.text = @"3";
+    ChildViewController *rightBottomViewController = [[ChildViewController alloc] init];
+    rightBottomViewController.view.backgroundColor = [UIColor cyanColor];
+    rightBottomViewController.label.text = @"4";
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    label.backgroundColor = [UIColor blackColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    label.text = @"move me";
+    
+    KLSquareViewController *viewController = [[KLSquareViewController alloc] init];
+    viewController.leftTopViewController = leftTopViewController;
+    viewController.rightTopViewController = rightTopViewController;
+    viewController.leftBottomViewController = leftBottomViewController;
+    viewController.rightBottomViewController = rightBottomViewController;
+    viewController.buttonView = label;
+    self.window.rootViewController = viewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
